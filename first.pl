@@ -1,0 +1,1 @@
+print "Date is `date`";
