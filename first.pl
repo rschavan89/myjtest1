@@ -1,1 +1,1 @@
-print "Date is `date`";
+print "Date is `date`\n";
