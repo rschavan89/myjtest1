@@ -1,0 +1,46 @@
+pipeline
+{
+	
+	agent any
+
+	triggers
+	{
+		pollSCM = '* * * * *'
+	}
+
+	stages 
+	{
+		stage ('Build')
+		{
+			steps "Building Code"
+			{
+
+				sh '''
+					echo "Deploying Build from Gits"
+
+				'''
+			}
+		}
+		stage ('Test')
+		{
+			steps "Testing Build"
+			{
+				sh '''
+					wcho "Testing Build "
+
+				'''
+			}
+		}
+		stage ('Deplpy')
+		{
+			steps "Deploying Build"
+			{
+				sh '''
+					echo "Deploying Build "
+
+				'''
+			}
+		}
+
+	}
+}
