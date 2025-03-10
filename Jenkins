@@ -12,8 +12,8 @@ pipeline
 	{
 		stage ('Build')
 		{
-			steps "Building Code"
-			{
+			steps
+                        {
 
 				sh '''
 					echo "Deploying Build from Gits"
@@ -23,7 +23,7 @@ pipeline
 		}
 		stage ('Test')
 		{
-			steps "Testing Build"
+			steps
 			{
 				sh '''
 					wcho "Testing Build "
@@ -33,7 +33,7 @@ pipeline
 		}
 		stage ('Deplpy')
 		{
-			steps "Deploying Build"
+			steps 
 			{
 				sh '''
 					echo "Deploying Build "
