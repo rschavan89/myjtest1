@@ -1,1 +1,2 @@
-print "Date is `date`\n";
+$dt = `date`;
+print "Date is " . $dt  . "\n";
